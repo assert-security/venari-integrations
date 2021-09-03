@@ -10,7 +10,7 @@ docker login -u <user> -p <token> assertsecurity.azurecr.io
 ````
 
 # SSH support
-If you need to support authenticated access to a git repository over ssh, you should define the following three files the .ssh folder before running docker build:
+If you need to support authenticated access to a git repository over ssh, you should define the following three files in the .ssh folder before running docker build:
 
 1) id_rsa
 2) id_rsa.pub
