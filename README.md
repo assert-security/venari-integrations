@@ -20,7 +20,7 @@ In the Dockerfile you will need to un-comment out the commands related to SSH.
 
 Make sure your git repository allows access via the public key defined in id_rsa.pub.  When running the docker image you will need to define a secret called "git-password" with the password to your private id_rsa file.  Defining secrets is out of scope for this document.  See our web site for more information at:
 
-https://assertsecurity.io/resources/devops-eval
+https://github.com/assert-security/venari-devops
 
 # Building the image
 
