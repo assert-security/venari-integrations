@@ -1,1 +1,1 @@
-cat /run/secrets/git-password
+cat /run/secrets/node__ssh__password
