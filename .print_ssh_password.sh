@@ -1,1 +1,1 @@
-cat /run/secrets/node__ssh__password
+echo "$node__ssh__password"

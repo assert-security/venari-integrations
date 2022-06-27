@@ -3,10 +3,10 @@ FROM assertsecurity.azurecr.io/venari:$IMAGE_VERSION AS base
 
 RUN yum install -y python3 git && python3 -m pip install semgrep
 
-RUN wget https://opensource.wandisco.com/centos/8/svn-1.14/RPMS/x86_64/libserf-1.3.9-8.el8.x86_64.rpm \ 
+RUN wget https://opensource.wandisco.com/centos/8/svn-1.14/RPMS/x86_64/libserf-1.3.9-1.el8.x86_64.rpm \ 
     && wget https://opensource.wandisco.com/centos/8/svn-1.14/RPMS/x86_64/subversion-1.14.0-1.x86_64.rpm
 
-RUN dnf install -y libserf-1.3.9-8.el8.x86_64.rpm subversion-1.14.0-1.x86_64.rpm
+RUN dnf install -y libserf-1.3.9-1.el8.x86_64.rpm subversion-1.14.0-1.x86_64.rpm
 
 ENV server__semgrepexecmethod=ci DISPLAY=NONE SSH_ASKPASS=/root/.print_ssh_password.sh
 COPY ./.bashrc /root
