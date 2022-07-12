@@ -9,6 +9,7 @@ RUN wget https://opensource.wandisco.com/centos/8/svn-1.14/RPMS/x86_64/libserf-1
 RUN dnf install -y libserf-1.3.9-1.el8.x86_64.rpm subversion-1.14.0-1.x86_64.rpm
 
 ENV server__semgrepexecmethod=ci DISPLAY=NONE SSH_ASKPASS=/root/.print_ssh_password.sh
+ENV SEMGREP_SEND_METRICS=off
 COPY ./.bashrc /root
 COPY ./.print_ssh_password.sh /root
 RUN chmod 700 /root/.print_ssh_password.sh
