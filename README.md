@@ -25,7 +25,7 @@ https://github.com/assert-security/venari-devops
 # Building the image
 
 ````
-docker build -t assertsecurity.azurecr.io/venari-integrations:3.5 --build-arg IMAGE_VERSION=3.5 .
+docker build -t assertsecurity.azurecr.io/venari-integrations:3.6 --build-arg IMAGE_VERSION=3.6 .
 ````
 
 # Importing Rules
